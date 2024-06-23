@@ -4,6 +4,26 @@ Teste pratico Fiesc
 Requisitos para funcionamento
 
 
+-------------------------------------------------------------------------
+
+Backend
+No terminal 
+
+cd backend
+npm install
+npx sequelize-cli db:migrate
+npm start
+
+-------------------------------------------------------------------------
+
+Frontend
+No terminal 
+
+cd frontend
+npm install
+npm start
+
+-------------------------------------------------------------------------
 
 Sql -
 CREATE TABLE Colaboradores (
@@ -37,33 +57,12 @@ CREATE TABLE RegistroPonto (
     hora TIME NOT NULL,
     tipo_registro VARCHAR(10) NOT NULL -- Pode ser 'entrada' ou 'saida'
 );
--------------------------------------------------------------------------
 
+-------------------------------------------------------------------------
 No terminal 
 
 psql -U "seu_usuario"
 \c nome_do_banco
-
--------------------------------------------------------------------------
-
-Backend
-No terminal 
-
-cd backend
-npm install
-npx sequelize-cli db:migrate
-npm start
-
--------------------------------------------------------------------------
-
-Frontend
-No terminal 
-
-cd frontend
-npm install
-npm start
-
-
 
 
 
